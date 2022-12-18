@@ -6,9 +6,6 @@ const BusinessCard = ({ texts }) => {
     <div className="business-card">
       <img src="https://picsum.photos.com/200" alt="picsum" />
       <p>{INTRODUCTION}</p>
-      <div>
-        Social Media Part
-      </div>
     </div>
   )
 }

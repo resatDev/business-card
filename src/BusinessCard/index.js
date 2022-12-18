@@ -1,10 +1,11 @@
 import React from 'react';
 
-const BusinessCard = () => {
+const BusinessCard = ({ texts }) => {
+  const { INTRODUCTION } = texts;
   return (
     <div className="business-card">
       <img src="https://picsum.photos.com/200" alt="picsum" />
-      <p>Introduction Part</p>
+      <p>{INTRODUCTION}</p>
       <div>
         Social Media Part
       </div>

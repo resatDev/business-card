@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+}
+#root{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 100vh;
+      padding-bottom: 2vh;
+}
+.language-switch{
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 16px;
+}
+.language-switch .ln-button{
+      border: none;
+      background-color: transparent;
+      padding: 12px 0;
+      width: 4em;
+      border: 4px solid #31B6BF;
+      cursor: pointer;
+      text-align: center;
+}
+.language-switch .ln-button:first-child{
+      border-top-left-radius: 2em;
+      border-bottom-left-radius: 2em;
+}
+.language-switch .ln-button:last-child{
+      border-top-right-radius: 2em;
+      border-bottom-right-radius: 2em;
+}
+.language-switch .ln-button.active{
+      background-color: #31B6BF;
+      color: white;
+}
+.business-card-content{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+.business-card-content .img-container{
+      border-radius: 50%;
+      position: relative;
+}
+.business-card-content .img-container .checkmark{
+      position: absolute;
+      top: 80%;
+      right: 5%;
+      width: 32px;
+      height: 32px;
+      background-color: #2AC07B;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.business-card-content .img-container .checkmark:after{
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 12px;
+      transform: rotate(45deg);
+      border-bottom: 3px solid white;
+      border-right: 3px solid white;
+}
+.business-card-content .img-container img{
+      border-radius: 50%;
+}
+.business-card-content .job-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2vh;
+      font-size: 32px;
+}
+.business-card-content .job-title span{
+      font-size: 16px;
+      opacity: 0.7;
+      margin-top: 0.5vh;
+}
+.business-card-content .introduction{
+      max-width: 20%;
+      text-align: center;
+      margin-top: 5vh;
+      line-height: 32px;
+}
+.social-media{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vh;
+}
+.social-media a{
+      text-decoration: none;
+      color: black;
+      margin-right: 1em;
+      border-radius: 50%;
+      border: 1px solid #31B6BF;
+      width: 4em;
+      height: 4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+}
+.personal-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2.5vh;
+}
+.personal-links button{
+      border: none;
+      background-color: #31B6BF;
+      padding: 1em 0;
+      width: 10em;
+      cursor: pointer;
+      border-radius: 5em;
+      color: white;
+}
+.personal-links button{
+      margin-right: 1em;
+}
+::-webkit-scrollbar{
+      width: 16px;
+}
+::-webkit-scrollbar-thumb{
+      background-color: #31B6BF;
+      border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:hover{
+      background-color: #0096FF;
+}
+@media screen and (max-width:1670px){
+      .business-card-content .introduction{
+            max-width: 30%;
+      }
+}
+@media screen and (max-width: 1250px){
+      .business-card-content .introduction{
+            max-width: 40%;
+      }
+}
+@media screen and (max-width: 960px){
+      .business-card-content .introduction{
+            max-width: 50%;
+      }
+}
+@media screen and (max-width: 800px){
+      .business-card-content .introduction{
+            max-width: 60%;
+      }
+}
+@media screen and (max-width: 630px){
+      .business-card-content .introduction{
+            max-width: 70%;
+      }
+}
+@media screen and (max-width: 530px){
+      .business-card-content .introduction{
+            max-width: 80%;
+      }
+}
+@media screen and (max-width: 480px){
+      .business-card-content .introduction{
+            max-width: 90%;
+      }
+      .social-media a{
+            width: 3em;
+            height: 3em;
+      }
+      .personal-links button{
+            width: 7em;
+            padding: 0.7em 0;
+      }
+}
+@media screen and (max-width: 390px){
+      .business-card-content .introduction{
+            max-width: 100%;
+      }
+}

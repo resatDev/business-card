@@ -25,3 +25,14 @@ export const SOCIAL_MEDIAS = [
     icon: 'Medium'
   }
 ]
+
+export const PERSONAL_LINKS = [
+  {
+    title: 'Blog',
+    url: 'https://softyak.github.io/articles'
+  },
+  {
+    title: 'CV',
+    url: 'https://softyak.github.io/resat-memis-cv'
+  }
+]

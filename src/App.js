@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BusinessCard from "./BusinessCard";
 import LanguageSwitch from "./LanguageSwitch";
+import PersonalLinks from "./PersonalLinks";
 import SocialMedia from "./SocialMedia";
 import { getBrowserLanguage, getTranslatedTexts } from "./utils";
 
@@ -18,6 +19,7 @@ const App = () => {
       <LanguageSwitch language={language} onLanguageChange={handleLanguageSwitch} />
       <BusinessCard texts={texts} />
       <SocialMedia />
+      <PersonalLinks />
     </div>
   );
 }

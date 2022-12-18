@@ -1,11 +1,10 @@
 import { useState } from "react";
 import BusinessCard from "./BusinessCard";
-import { LANGUAGES } from "./constants";
 import LanguageSwitch from "./LanguageSwitch";
-import { getTranslatedTexts } from "./utils";
+import { getBrowserLanguage, getTranslatedTexts } from "./utils";
 
 const App = () => {
-  const [language, setLanguage] = useState(LANGUAGES.TURKISH);
+  const [language, setLanguage] = useState(getBrowserLanguage());
 
   const texts = getTranslatedTexts(language);
 

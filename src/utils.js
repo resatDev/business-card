@@ -7,7 +7,7 @@ export const getTranslatedTexts = language => {
 
 export const getBrowserLanguage = () => {
   switch (true) {
-    case (navigator.language).inclued('tr'):
+    case (navigator.language).includes('tr'):
       return LANGUAGES.TURKISH;
     default:
       return LANGUAGES.ENGLISH;

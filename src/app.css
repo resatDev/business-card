@@ -93,7 +93,7 @@
       max-width: 20%;
       text-align: center;
       margin-top: 5vh;
-      line-height: 32px;
+      line-height: 29px;
 }
 .social-media{
       display: flex;
@@ -106,7 +106,7 @@
       color: black;
       margin-right: 1em;
       border-radius: 50%;
-      border: 1px solid #31B6BF;
+      border: 1px solid #000;
       width: 4em;
       height: 4em;
       display: flex;
@@ -132,16 +132,7 @@
 .personal-links button{
       margin-right: 1em;
 }
-::-webkit-scrollbar{
-      width: 16px;
-}
-::-webkit-scrollbar-thumb{
-      background-color: #31B6BF;
-      border-radius: 16px;
-}
-::-webkit-scrollbar-thumb:hover{
-      background-color: #0096FF;
-}
+
 @media screen and (max-width:1670px){
       .business-card-content .introduction{
             max-width: 30%;

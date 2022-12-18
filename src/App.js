@@ -1,7 +1,9 @@
+import BusinessCard from "./BusinessCard";
+
 const App = () => {
   return (
     <div className="App">
-      Resat Memis
+      <BusinessCard />
     </div>
   );
 }

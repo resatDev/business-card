@@ -15,7 +15,7 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div className="business-card">
       <LanguageSwitch language={language} onLanguageChange={handleLanguageSwitch} />
       <BusinessCard texts={texts} />
       <SocialMedia />
